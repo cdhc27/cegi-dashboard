@@ -48,9 +48,9 @@
             <div class="metric-foot">Consumo diário acumulado</div>
           </article>
           <article class="metric-card">
-            <div class="metric-label"><span>REFERÊNCIA DIÁRIA</span><span class="metric-symbol muted">◎</span></div>
+            <div class="metric-label"><span>CONSUMO DE ONTEM</span><span class="metric-symbol muted">◎</span></div>
             <div class="metric-value"><strong id="referenceKwh">—</strong><small>kWh</small></div>
-            <div class="metric-foot">Parâmetro de comparação</div>
+            <div class="metric-foot">Consumo diário anterior</div>
           </article>
           <article class="metric-card">
             <div class="metric-label"><span>CONSUMO TOTAL</span><span class="metric-symbol muted">▥</span></div>
@@ -59,35 +59,14 @@
           </article>
         </div>
         <div class="comparison-card">
-          <div><span class="small-label">VARIAÇÃO EM RELAÇÃO À REFERÊNCIA</span><strong id="dailyChange">—</strong></div>
+          <div><span class="small-label">VARIAÇÃO EM RELAÇÃO A ONTEM</span><strong id="dailyChange">—</strong></div>
           <div class="comparison-track"><span id="comparisonBar"></span></div>
           <span class="comparison-caption" id="comparisonCaption">Aguardando leitura de consumo</span>
         </div>
       </section>
 
       <section class="section">
-        <div class="section-heading"><span class="section-index blue">02</span><h2>Parâmetros elétricos</h2><span class="section-line"></span><span class="section-note">REDE ELÉTRICA</span></div>
-        <div class="metrics metrics-three">
-          <article class="metric-card electric">
-            <div class="metric-label"><span>TENSÃO</span><span class="metric-symbol">ϟ</span></div>
-            <div class="metric-value"><strong id="voltage">—</strong><small>V</small></div>
-            <div class="metric-foot">Tensão eficaz medida</div>
-          </article>
-          <article class="metric-card electric">
-            <div class="metric-label"><span>CORRENTE</span><span class="metric-symbol">∿</span></div>
-            <div class="metric-value"><strong id="current">—</strong><small>A</small></div>
-            <div class="metric-foot">Corrente eficaz medida</div>
-          </article>
-          <article class="metric-card electric">
-            <div class="metric-label"><span>POTÊNCIA APARENTE</span><span class="metric-symbol">⌁</span></div>
-            <div class="metric-value"><strong id="power">—</strong><small>VA</small></div>
-            <div class="metric-foot">Tensão × corrente</div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-heading"><span class="section-index">03</span><h2>Gestão econômica</h2><span class="section-line"></span><span class="section-note">CUSTOS</span></div>
+        <div class="section-heading"><span class="section-index blue">02</span><h2>Gestão econômica</h2><span class="section-line"></span><span class="section-note">CUSTOS</span></div>
         <div class="economy-grid">
           <article class="metric-card cost-card">
             <div class="metric-label"><span>CUSTO ACUMULADO</span><span class="metric-symbol">R$</span></div>
@@ -106,6 +85,29 @@
           </article>
         </div>
       </section>
+
+      <section class="section">
+        <div class="section-heading"><span class="section-index blue">03</span><h2>Parâmetros elétricos</h2><span class="section-line"></span><span class="section-note">REDE ELÉTRICA</span></div>
+        <div class="metrics metrics-three">
+          <article class="metric-card electric">
+            <div class="metric-label"><span>TENSÃO</span><span class="metric-symbol">ϟ</span></div>
+            <div class="metric-value"><strong id="voltage">—</strong><small>V</small></div>
+            <div class="metric-foot">Tensão eficaz medida</div>
+          </article>
+          <article class="metric-card electric">
+            <div class="metric-label"><span>CORRENTE</span><span class="metric-symbol">∿</span></div>
+            <div class="metric-value"><strong id="current">—</strong><small>A</small></div>
+            <div class="metric-foot">Corrente eficaz medida</div>
+          </article>
+          <article class="metric-card electric">
+            <div class="metric-label"><span>POTÊNCIA APARENTE</span><span class="metric-symbol">⌁</span></div>
+            <div class="metric-value"><strong id="power">—</strong><small>VA</small></div>
+            <div class="metric-foot">Potência aparente medida</div>
+          </article>
+        </div>
+      </section>
+
+
 
       <section class="footer-panel">
         <div class="footer-emblem">C</div>
